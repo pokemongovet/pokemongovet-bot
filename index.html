@@ -57,11 +57,43 @@
                                 <textarea class="form-control" id="comentario-issue" rows="3" ></textarea>
                         </div>
                         <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
-                        <button id="submit-issue" class="btn btn-primary my-2">Submeter Issue</button>
+                        <!-- <button id="submit-issue" class="btn btn-primary my-2">Submeter Issue</button> -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#authentication">Submeter Issue</button>
                     </div>
             </div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </div>
+
+
+
+<div class="modal fade" id="authentication" tabindex="-1" role="dialog" aria-labelledby="authenticationLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="authenticationLabel">Login GITHUB</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="user" class="col-form-label">Usuário</label>
+            <input type="text" class="form-control" id="user">
+          </div>
+          <div class="form-group">
+            <label for="password" class="col-form-label">Senha</label>
+            <input type="password" class="form-control" id="password"></input>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button id="submit-issue" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
