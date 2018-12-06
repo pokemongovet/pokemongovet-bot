@@ -10,27 +10,58 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="main.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div>
-                <div class="form-group">
-                    <label for="title-issue">Titulo</label>
-                    <input type="text" class="form-control" id="title-issue" placeholder="Titulo" >
-                </div>
-
-                <div class="form-group">
-                        <label for="comentario-issue">Comentário</label>
-                        <textarea class="form-control" id="comentario-issue" rows="3" ></textarea>
-                </div>
-                <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
-
-                <button id="submit-issue" class="btn btn-primary">ENVIAR</button>
+    <div class="bg-dark collapse" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h3 class="text-white">Sobre</h3>
+              <p class="text-white">PokemonGoVet é uma iniciativa de um grupo focado em aproximar pessoas que ainda não adotaram animais, mas tem potencial para tal, de organizações que tenham animais para adoção. O grupo de trabalho atua sem fins lucrativos e é formado tanto por desenvolvedores que defendem software livre, como gestores e analistas simpatizantes pela causa animal. Eles vêem no carisma de animais virtuais trazidos pelo Pokémon Go, aplicativo de realidade aumentada, um meio de incentivar a adoção de animais reais. Atua com compartilhamento de código aberto e ações de marketing em redes sociais..</p>
             </div>
+            <div  style="text-align: center" class="col-sm-4 offset-md-1 py-4">
+              <h2 class="text-white">Informações</2>
+              <ul class="list-unstyled">
+                <h4><li><a href="https://pokemongovet.github.io/" class="text-white">Site</a></li></h4>
+                <h4><li><a href="https://github.com/pokemongovet/pokemongovet.github.io" class="text-white">Repositório</a></li></h4>
+              </ul>
+              <a href="https://pokemongovet.github.io/"><img src="https://avatars0.githubusercontent.com/u/20570895?s=280&v=4" style="border-radius: 50%" alt="PokemonGoVet" width="130px" height="130px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <div class="navbar-brand d-flex align-items-center">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/57541cc3-da0f-40dc-94ec-49b954d5805a/d93bs8z-cc196bbd-da41-4167-9fec-798ae39fa542.png/v1/fill/w_894,h_894,strp/pokeball_logo_by_pedronex_d93bs8z-pre.png" width="25px" height="25px"/>
+            <strong>PokemonGovet</strong>
+          </div>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #3b3b3b">
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Issue-Bot</h1>
+            <strong><p class="mb-0">Formulário do Bot da Issue para o Pokemongovet</p></strong>
+
+                    <div>
+                        <div class="form-group">
+                            <label for="title-issue">Titulo</label>
+                            <input style="text-align: center" type="text" class="form-control" id="title-issue" placeholder="Título da issue" >
+                        </div>
+
+                        <div class="form-group">
+                                <label for="comentario-issue">Comentário</label>
+                                <textarea class="form-control" id="comentario-issue" rows="3" ></textarea>
+                        </div>
+                        <!-- <div class="g-recaptcha" data-sitekey="your_site_key"></div> -->
+                        <button id="submit-issue" class="btn btn-primary my-2">Submeter Issue</button>
+                    </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </div>
 </body>
 </html>
